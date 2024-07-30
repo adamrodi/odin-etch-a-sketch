@@ -35,8 +35,14 @@ function addEventListenerAllGridDivs() {
 
 function newGrid() {
     let squaresPerSide = prompt("Enter the number of squares per side:");
-    if (squaresPerSide <= 100) {
+    if (squaresPerSide === null ){
+
+    }
+    else if (squaresPerSide <= 100) {
         document.querySelector("#container").innerHTML = ""; 
         createGrid(squaresPerSide);
+    }
+    else {
+        alert("Max squares per side is 100");
     }
 }
