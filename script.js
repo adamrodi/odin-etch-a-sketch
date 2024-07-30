@@ -20,7 +20,7 @@ function createGrid(squaresPerLine) {
     addEventListenerAllGridDivs()
     
 }
-
+//
 createGrid(16);
 
 
